@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    color: #151515;
+}
+
+.movie-card {
+    margin-top: 1rem;
+    height: 800px;
+    text-align: center;
+
+}
+
+
+
+.movie-title {
+    text-transform:capitalize;
+}
+
+.movie-poster-container img {
+    margin-top: 2rem;
+    height: 500px;
+    border-radius:8px;
+    cursor: pointer;
+}
+    .my-element { animation:bounce;
+    animation-duration 2s;
+}
+/*hover efect*/
+.movie-poster-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 8px 8px 8px -4px rgb(139, 133, 133);
+
+}
+.movie-rating {
+    display: R;
+    border: 1px solid #151515;
+    padding: 0.1rem;
+    border-radius: 5px;
+}
+
+.movie-duration {
+    margin-left: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.movie-duration:before {
+    content: "\2022";
+}
+
+
+
+    
+        /* quote typing efect */
+body {
+    background: rgba(255, 255, 255, 0.993);
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .movie-info-quote {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgba(0, 0, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    
+            animation: 
+      typing 7s steps(30, end),
+      blink-caret .5s step-end infinite;
+      color: #151515;
+      margin-top: 2rem;
+  }
+  
+  /* The typing effect */
+  @-webkit-keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(5, 5, 5) }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(0, 0, 0, 0) }
+  }
+
+
+.movie-info-overview-title {
+    text-transform: capitalize ;
+    letter-spacing: 0.1rem;
+}
+
+.movie-info-actions {
+    font-size:1.1rem;
+}
+
+.movie-info-actions ul {
+    list-style: none;
+}
+
+.movie-info-actions ul li {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(3, 37, 65);
+    
+}
+
+.movie-info-actions ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 6rem;
+    text-align: center;
+    color: #777;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    transform: translateY(150px);
+    animation: slide-from-bottom 2.5s ease-in-out forwards;
+}
+
+@keyframes slide-from-bottom {
+    
+    100% {transform: translateY(0px);}
+}
+
+footer ul li a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #777;
+}
